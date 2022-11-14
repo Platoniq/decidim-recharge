@@ -4,12 +4,12 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-gem "decidim", "0.26.2"
-# gem "decidim-conferences", "0.26.2"
-# gem "decidim-consultations", "0.26.2"
-# gem "decidim-elections", "0.26.2"
-# gem "decidim-initiatives", "0.26.2"
-# gem "decidim-templates", "0.26.2"
+gem "decidim", "0.26.3"
+# gem "decidim-conferences", "0.26.3"
+# gem "decidim-consultations", "0.26.3"
+# gem "decidim-elections", "0.26.3"
+# gem "decidim-initiatives", "0.26.3"
+# gem "decidim-templates", "0.26.3"
 
 gem "bootsnap", "~> 1.3"
 
@@ -26,7 +26,7 @@ group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
 
   gem "brakeman"
-  gem "decidim-dev", "0.26.2"
+  gem "decidim-dev", "0.26.3"
 end
 
 group :development do
