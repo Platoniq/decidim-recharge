@@ -10,6 +10,7 @@ gem "decidim", "0.26.3"
 # gem "decidim-elections", "0.26.3"
 # gem "decidim-initiatives", "0.26.3"
 # gem "decidim-templates", "0.26.3"
+gem "decidim-decidim_awesome", "~> 0.8"
 
 gem "bootsnap", "~> 1.3"
 
