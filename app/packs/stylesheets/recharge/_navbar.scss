@@ -1,0 +1,11 @@
+@import "./variables";
+
+.title-bar {
+  background-color: $white;
+  color: $black;
+}
+
+.topbar__user__login a {
+  color: $black;
+  font-weight: 600;
+}
