@@ -1,0 +1,15 @@
+@import "./variables";
+
+.eu-footer{
+  background: $black;
+
+}
+
+.eu-footer {
+      img {
+        border: 3px white solid;
+        height: 80px;
+        margin: 3px 0 0;
+        display: inline-block;
+      }
+    }

@@ -1,0 +1,19 @@
+ca:
+  platoniq:
+    footer:
+      made_with_open_source: Web creada amb <a href="%{repository}" target="_blank">programari lliure</a>
+
+en:
+  platoniq:
+    footer:
+      made_with_open_source: Website made with <a href="%{repository}" target="_blank">free software</a>
+
+es:
+  platoniq:
+    footer:
+      made_with_open_source: Web creada con <a href="%{repository}" target="_blank">software libre</a>
+
+fr:
+  platoniq:
+    footer:
+      made_with_open_source: Site creé avec <a href="%{repository}" target="_blank">logiciel libre</a>

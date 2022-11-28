@@ -1,0 +1,50 @@
+@function extract-rgb($color) {
+  @return red($color), green($color), blue($color);
+}
+
+$color-pink: #ffa3e2;
+$color-blue: #3ec0ff;
+
+
+$primary-color: $color-pink;
+$secondary-color: $color-blue;
+$success-color: #3e9d00;
+$warning-color: #ff8500;
+
+$primary-color-rgb: extract-rgb($primary-color);
+$secondary-color-rgb: extract-rgb($secondary-color);
+$success-color-rgb: extract-rgb($success-color);
+$warning-color-rgb: extract-rgb($warning-color);
+
+
+:root {
+  --primary: #{$primary-color};
+  --primary-rgb: #{$primary-color-rgb};
+  --secondary: #{$secondary-color};
+  --secondary-rgb: #{$secondary-color-rgb};
+  --success: #{$success-color};
+  --success-rgb: #{$success-color-rgb};
+  --warning: #{$warning-color};
+  --warning-rgb: #{$warning-color-rgb};
+
+}
+
+$color-palette: (
+        primary: $primary-color,
+        secondary: $secondary-color,
+        success: $success-color,
+        warning: $warning-color,
+
+);
+$foundation-palette: (
+        primary: $primary-color,
+        secondary: $secondary-color,
+        success: $success-color,
+        warning: $warning-color,
+
+);
+
+$white: #ffffff;
+$black: #000000;
+$body-background: $white;
+$body-font-color: $black;
