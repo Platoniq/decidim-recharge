@@ -3,4 +3,4 @@
 
 // Load images
 require.context("../../images", true)
-
+require.context("../../fonts", true)

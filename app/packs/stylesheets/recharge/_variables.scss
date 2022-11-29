@@ -29,22 +29,10 @@ $warning-color-rgb: extract-rgb($warning-color);
 
 }
 
-$color-palette: (
-        primary: $primary-color,
-        secondary: $secondary-color,
-        success: $success-color,
-        warning: $warning-color,
 
-);
-$foundation-palette: (
-        primary: $primary-color,
-        secondary: $secondary-color,
-        success: $success-color,
-        warning: $warning-color,
-
-);
 
 $white: #ffffff;
 $black: #000000;
 $body-background: $white;
 $body-font-color: $black;
+$footer-bg: $black;

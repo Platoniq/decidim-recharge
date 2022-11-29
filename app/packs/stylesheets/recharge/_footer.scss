@@ -1,15 +1,26 @@
 @import "./variables";
 
-.eu-footer{
-  background: $black;
 
-}
 
 .eu-footer {
+  background: $footer-bg;
+
+}
+.eu-footer {
+  .eu-disclaimer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__img {
+      height: 8rem;
+
       img {
-        border: 3px white solid;
-        height: 80px;
-        margin: 3px 0 0;
-        display: inline-block;
+        height: 100%;
+        max-width: none;
+        width: auto;
       }
     }
+  }
+}
