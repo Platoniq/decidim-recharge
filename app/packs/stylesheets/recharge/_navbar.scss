@@ -10,8 +10,10 @@
   font-weight: 600;
 }
 
-.logo-wrapper  {
-  span {
-    color: $black;
+
+  .logo-wrapper {
+    img {
+      max-height: 6rem;
+    }
+
   }
-}
