@@ -2,10 +2,16 @@
 
 
 
-.eu-footer {
+.footer {
   background: $footer-bg;
-
 }
+
+.mini-footer,
+.main-footer,
+.eu-footer {
+  background: none;
+}
+
 .eu-footer {
   .eu-disclaimer {
     display: flex;
