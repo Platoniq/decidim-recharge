@@ -1,14 +1,23 @@
 @import "./variables";
 
 
-.off-canvas-wrapper, .home-section:nth-of-type(2n + 1) {
+body, .off-canvas-wrapper, .home-section:nth-of-type(2n + 1) {
   background-color: $body-background;
 }
 
 
-
-
-body {
-  background-color: $body-background;
+body, h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6  {
+  font-family: "Neue Plak", sans-serif;
 }
 
