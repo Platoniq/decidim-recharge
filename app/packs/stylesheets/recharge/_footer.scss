@@ -15,9 +15,9 @@
 .eu-footer {
   .eu-disclaimer {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 
     &__img {
       height: 8rem;
@@ -28,5 +28,9 @@
         width: auto;
       }
     }
+  }
+  .row {
+    display: flex;
+    justify-content: center
   }
 }
