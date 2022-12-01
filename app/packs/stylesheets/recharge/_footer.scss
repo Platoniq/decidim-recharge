@@ -12,6 +12,9 @@
   background: none;
 }
 
+
+
+
 .eu-footer {
   .eu-disclaimer {
     display: flex;
@@ -33,4 +36,19 @@
     display: flex;
     justify-content: center
   }
+}
+
+.mini-footer {
+  .logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    padding: 1rem;
+  }
+
+  .row {
+    display: flex;
+    align-items: center
+  }
+
 }
