@@ -2,14 +2,20 @@
   @return red($color), green($color), blue($color);
 }
 
+/*recharge colours*/
 $color-pink: #ffa3e2;
 $color-blue: #3ec0ff;
+$color-blue2:#3e7be2;
+$color-green:#3e9d00;
+$color-orange:#ff8500;
+$color-yellow:#ffd000;
+
 
 
 $primary-color: $color-pink;
 $secondary-color: $color-blue;
-$success-color: #3e9d00;
-$warning-color: #ff8500;
+$success-color: $color-green;
+$warning-color:$color-orange;
 
 $primary-color-rgb: extract-rgb($primary-color);
 $secondary-color-rgb: extract-rgb($secondary-color);

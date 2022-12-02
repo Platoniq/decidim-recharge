@@ -5,9 +5,18 @@
   color: $black;
 }
 
-.topbar__user__login a {
+.topbar__user__login a, .topbar__dropmenu > ul > li > a, .topbar__admin__link a{
   color: $black;
   font-weight: 600;
+}
+
+.topbar__admin__link a:hover {
+  color:$color-blue2;
+}
+
+.topbar__dropmenu > ul > li > a::after{
+  margin-top: -1px !important;
+  border-top-color: $black !important;
 }
 
 
