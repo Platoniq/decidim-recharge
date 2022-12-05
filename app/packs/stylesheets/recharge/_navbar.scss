@@ -10,6 +10,10 @@
   font-weight: 600;
 }
 
+.topbar__dropmenu .is-dropdown-submenu li a {
+  color: $color-blue2;
+}
+
 .topbar__admin__link a:hover {
   color:$black;
 }
@@ -19,6 +23,11 @@
   border-top-color: $black !important;
 }
 
+.dropdown.menu > li.is-active > a {
+  background: transparent;
+  color: $color-blue2;
+}
+
 
   .logo-wrapper {
     img {
@@ -26,3 +35,6 @@
     }
 
   }
+
+
+

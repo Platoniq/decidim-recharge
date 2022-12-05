@@ -1,0 +1,11 @@
+@import "./variables";
+
+
+.card__link {
+  color: $color-blue2;
+}
+
+.card__link:hover, .card__content:hover, .card__text a:hover {
+  color: $color-blue2;
+  text-decoration: underline;
+}
