@@ -16,11 +16,13 @@ $primary-color: $color-pink;
 $secondary-color: $color-blue;
 $success-color: $color-green;
 $warning-color:$color-orange;
+$alert-color: $color-orange;
 
 $primary-color-rgb: extract-rgb($primary-color);
 $secondary-color-rgb: extract-rgb($secondary-color);
 $success-color-rgb: extract-rgb($success-color);
 $warning-color-rgb: extract-rgb($warning-color);
+$alert-color-rgb: extract-rgb($warning-color);
 
 
 :root {
@@ -32,6 +34,8 @@ $warning-color-rgb: extract-rgb($warning-color);
   --success-rgb: #{$success-color-rgb};
   --warning: #{$warning-color};
   --warning-rgb: #{$warning-color-rgb};
+  --alert: #{$warning-color};
+  --alert-rgb: #{$warning-color-rgb};
 
 }
 
