@@ -11,6 +11,11 @@
   font-weight: 600;
 }
 
+.topbar__admin__link a span{
+  padding-left: 0.3rem;
+}
+
+
 .topbar__dropmenu .is-dropdown-submenu li a {
   color: $color-blue2;
 }
@@ -42,5 +47,22 @@
 
   }
 
+.topbar__user{
+  display: inline-block;
+  padding-right: 2.5rem;
+  margin-left: 2rem;
+
+  @media (min-width: (1300 * .0625) + em){
+    padding-right: 2.5rem;
+  }
+}
+
+.topbar__user__logged{
+
+
+  @media (min-width: (1300 * .0625) + em){
+    padding-right: 2.5rem;
+  }
+}
 
 
