@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_11_22_121516) do
+ActiveRecord::Schema.define(version: 2022_12_07_162145) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -194,6 +194,7 @@ ActiveRecord::Schema.define(version: 2022_11_22_121516) do
     t.integer "weight", default: 1, null: false
     t.integer "follows_count", default: 0, null: false
     t.jsonb "announcement"
+    t.string "linkedin_handler"
     t.index ["decidim_area_id"], name: "index_decidim_assemblies_on_decidim_area_id"
     t.index ["decidim_assemblies_type_id"], name: "index_decidim_assemblies_on_decidim_assemblies_type_id"
     t.index ["decidim_organization_id", "slug"], name: "index_unique_assembly_slug_and_organization", unique: true
@@ -1012,6 +1013,7 @@ ActiveRecord::Schema.define(version: 2022_11_22_121516) do
     t.string "machine_translation_display_priority", default: "original", null: false
     t.string "external_domain_whitelist", default: [], array: true
     t.boolean "enable_participatory_space_filters", default: true
+    t.string "linkedin_handler"
     t.index ["host"], name: "index_decidim_organizations_on_host", unique: true
     t.index ["name"], name: "index_decidim_organizations_on_name", unique: true
   end

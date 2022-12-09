@@ -31,3 +31,12 @@
 
 en:
   hello: "Hello world"
+  layouts:
+    decidim:
+      social_media_links:
+        linkedin: "%{organization} at Linkedin"
+  decidim:
+    admin:
+      organization:
+        form:
+          linkedin: Linkedin
