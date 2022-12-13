@@ -11,6 +11,44 @@
   font-weight: 600;
 }
 
+.topbar__user__login {
+  text-align: right;
+  line-height: 1.2;
+}
+
+@media print, screen and (min-width: 40em) {
+  .topbar__user__login a {
+    color: #e8e8e8;
+    margin-left: 1rem;
+  }
+}
+.topbar__user__login a:hover {
+  text-decoration: underline;
+}
+.topbar__user__login a::before {
+  content: "";
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  display: inline-block;
+  width: 1px;
+  height: 2px;
+  border-left: 1px solid #e8e8e8;
+  vertical-align: middle;
+}
+@media print, screen and (min-width: 40em) {
+  .topbar__user__login a::before {
+    display: none;
+  }
+}
+@media print, screen and (min-width: 40em) {
+  .topbar__user__login a:first-of-type {
+    margin-left: 0;
+  }
+}
+.topbar__user__login a:first-of-type::before {
+  display: none;
+}
+
 .topbar__admin__link a span{
   padding-left: 0.3rem;
 }
