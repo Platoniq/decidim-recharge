@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/mainio/decidim-module-term_customizer
+  revision: f0d720710822f1231ea249dd71f978143d38a6c4
+  branch: release/0.26-stable
+  specs:
+    decidim-term_customizer (0.26.0)
+      decidim-admin (~> 0.26.0)
+      decidim-core (~> 0.26.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -838,6 +847,7 @@ DEPENDENCIES
   decidim (= 0.26.3)
   decidim-decidim_awesome (~> 0.8)
   decidim-dev (= 0.26.3)
+  decidim-term_customizer!
   faker (~> 2.14)
   figaro (~> 1.2)
   letter_opener_web (~> 1.3)
