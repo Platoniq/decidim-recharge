@@ -1,0 +1,58 @@
+@import "./variables";
+
+
+
+.footer {
+  background: $footer-bg;
+}
+
+.mini-footer,
+.main-footer,
+.eu-footer {
+  background: none;
+}
+
+
+
+
+.eu-footer {
+  .eu-disclaimer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .flag{
+      height: auto;
+      max-height: 8rem;
+    }
+    &__img {
+      width: 15rem;
+
+      img {
+        height: auto;
+        max-width: 100vw;
+        width: 15rem;
+      }
+    }
+  }
+  .row {
+    display: flex;
+    justify-content: center
+  }
+}
+
+.mini-footer {
+  .logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    padding: 1rem;
+  }
+
+  .row {
+    display: flex;
+    align-items: center
+  }
+
+}

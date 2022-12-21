@@ -1,0 +1,11 @@
+@import "./variables";
+
+
+a {
+  color: $color-blue2;
+  font-weight: normal;
+}
+
+a:hover {
+  color: $color-blue2;
+}

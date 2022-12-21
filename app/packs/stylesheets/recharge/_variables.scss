@@ -1,0 +1,48 @@
+@function extract-rgb($color) {
+  @return red($color), green($color), blue($color);
+}
+
+/*recharge colours*/
+$color-pink: #ffa3e2;
+$color-blue: #3ec0ff;
+$color-blue2:#3e7be2;
+$color-green:#3e9d00;
+$color-orange:#ff8500;
+$color-yellow:#ffd000;
+
+
+
+$primary-color: $color-pink;
+$secondary-color: $color-blue;
+$success-color: $color-green;
+$warning-color:$color-orange;
+$alert-color: $color-orange;
+
+$primary-color-rgb: extract-rgb($primary-color);
+$secondary-color-rgb: extract-rgb($secondary-color);
+$success-color-rgb: extract-rgb($success-color);
+$warning-color-rgb: extract-rgb($warning-color);
+$alert-color-rgb: extract-rgb($warning-color);
+
+
+:root {
+  --primary: #{$primary-color};
+  --primary-rgb: #{$primary-color-rgb};
+  --secondary: #{$secondary-color};
+  --secondary-rgb: #{$secondary-color-rgb};
+  --success: #{$success-color};
+  --success-rgb: #{$success-color-rgb};
+  --warning: #{$warning-color};
+  --warning-rgb: #{$warning-color-rgb};
+  --alert: #{$warning-color};
+  --alert-rgb: #{$warning-color-rgb};
+
+}
+
+
+
+$white: #ffffff;
+$black: #000000;
+$body-background: $white;
+$body-font-color: $black;
+$footer-bg: $primary-color;
