@@ -56,3 +56,14 @@
   }
 
 }
+
+.main-footer,
+.mini-footer {
+  a {
+    color: $black;
+
+    &:hover {
+      color: darken($medium-gray, 40%);
+    }
+  }
+}

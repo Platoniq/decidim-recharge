@@ -33,8 +33,11 @@ en:
   hello: "Hello world"
   layouts:
     decidim:
+      footer:
+        cc_by_license: Creative Commons License by SA
       social_media_links:
         linkedin: "%{organization} at Linkedin"
+
   decidim:
     admin:
       organization:
