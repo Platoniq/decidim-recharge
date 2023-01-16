@@ -1,7 +1,5 @@
 @import "./variables";
 
-
-
 .footer {
   background: $footer-bg;
 }
@@ -60,10 +58,14 @@
 .main-footer,
 .mini-footer {
   a {
-    color: $black;
+    color: #404040;
 
     &:hover {
       color: darken($medium-gray, 40%);
     }
+  }
+
+  span {
+    color: #404040;
   }
 }

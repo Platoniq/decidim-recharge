@@ -4,6 +4,80 @@ $navbar-color: $white;
 $navbar-color-hover: rgba(white, .5);
 $navbar-active-color: rgba(white, .7);
 
+.title-bar {
+  background-image: url("images/background_recharge_pink.png");
+  background-size: contain;
+  color: $black;
+}
+
+.topbar__dropmenu > ul > li > a, .topbar__admin__link a{
+  color: $black;
+  font-weight: 600;
+}
+
+.topbar__user__login a:hover {
+  color: $white;
+}
+
+@media print, screen and (min-width: 40em) {
+  .topbar__user__login a, .topbar__user__login a:hover {
+    color: $black;
+  }
+}
+
+
+.topbar__admin__link a span{
+  padding-left: 0.3rem;
+}
+
+
+.topbar__dropmenu .is-dropdown-submenu li a {
+  color: $color-blue2;
+}
+
+.topbar__admin__link a:hover {
+  color:$black;
+}
+
+.topbar__notifications .icon, .topbar__conversations .icon {
+  fill: $black;
+  opacity: 0.6;
+}
+
+.topbar__dropmenu > ul > li > a::after{
+  margin-top: -1px !important;
+  border-top-color: $black !important;
+}
+
+.dropdown.menu > li.is-active > a {
+  background: transparent;
+  color: $color-blue2;
+}
+
+
+.logo-wrapper {
+  img {
+    max-height: 6rem;
+  }
+}
+
+.topbar__user{
+  display: inline-block;
+  padding-right: 2.5rem;
+  margin-left: 2rem;
+
+  @media (min-width: (1300 * .0625) + em){
+    padding-right: 2.5rem;
+  }
+}
+
+.topbar__user__logged{
+
+  @media (min-width: (1300 * .0625) + em){
+    padding-right: 2.5rem;
+  }
+}
+
 .main-nav__link a {
   color: $navbar-color;
 
