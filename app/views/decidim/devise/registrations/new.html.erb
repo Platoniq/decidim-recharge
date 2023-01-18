@@ -57,7 +57,7 @@
               </div>
 
               <div class="field">
-                <%= f.text_field :country %>
+                <%= f.select(:country, ISO3166::Country.all_names_with_codes(locale = I18n.locale)) %>
               </div>
             </div>
           </div>

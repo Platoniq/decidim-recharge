@@ -16,7 +16,7 @@
       <%= f.email_field :email %>
       <%= f.url_field :personal_url %>
       <%= f.text_area :about, rows: 5 %>
-      <%= f.text_field :country %>
+      <%= f.select(:country, ISO3166::Country.all_names_with_codes(locale = I18n.locale)) %>
 
       <%= f.collection_select(
             :locale,

@@ -184,6 +184,10 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.10)
     connection_pool (2.3.0)
+    countries (5.3.0)
+      unaccent (~> 0.3)
+    country_select (8.0.1)
+      countries (~> 5.0)
     crack (0.4.5)
       rexml
     crass (1.0.6)
@@ -783,6 +787,7 @@ GEM
     tzinfo (1.2.10)
       thread_safe (~> 0.1)
     uber (0.1.0)
+    unaccent (0.4.0)
     unicode-display_width (1.8.0)
     valid_email2 (2.3.1)
       activemodel (>= 3.2)
@@ -844,6 +849,7 @@ DEPENDENCIES
   capistrano-rails-console
   capistrano-rbenv
   capistrano-sidekiq
+  country_select (~> 8.0)
   decidim (= 0.26.3)
   decidim-decidim_awesome (~> 0.8)
   decidim-dev (= 0.26.3)

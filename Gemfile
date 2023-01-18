@@ -15,6 +15,8 @@ gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-te
 
 gem "bootsnap", "~> 1.3"
 
+gem 'country_select', '~> 8.0'
+
 gem "puma", ">= 5.0.0"
 
 gem "faker", "~> 2.14"
