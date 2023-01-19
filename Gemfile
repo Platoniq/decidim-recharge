@@ -3,15 +3,17 @@
 source "https://rubygems.org"
 
 ruby RUBY_VERSION
+DECIDIM_BRANCH = "release/0.26-stable"
+DECIDIM_VERSION = { git: "https://github.com/decidim/decidim", branch: DECIDIM_BRANCH }.freeze
 
-gem "decidim", "0.26.3"
-# gem "decidim-conferences", "0.26.3"
-# gem "decidim-consultations", "0.26.3"
-# gem "decidim-elections", "0.26.3"
-# gem "decidim-initiatives", "0.26.3"
-# gem "decidim-templates", "0.26.3"
+gem "decidim", DECIDIM_VERSION
+# gem "decidim-conferences", DECIDIM_VERSION
+# gem "decidim-consultations", DECIDIM_VERSION
+# gem "decidim-elections", DECIDIM_VERSION
+# gem "decidim-initiatives", DECIDIM_VERSION
+# gem "decidim-templates", DECIDIM_VERSION
 gem "decidim-decidim_awesome", "~> 0.8"
-gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer", branch: :"release/0.26-stable"
+gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer", branch: DECIDIM_BRANCH
 
 gem "bootsnap", "~> 1.3"
 
@@ -29,7 +31,7 @@ group :development, :test do
   gem "rubocop-faker"
 
   gem "brakeman"
-  gem "decidim-dev", "0.26.3"
+  gem "decidim-dev", DECIDIM_VERSION
 end
 
 group :development do
