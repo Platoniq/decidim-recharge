@@ -10,8 +10,6 @@ $color-green:#3e9d00;
 $color-orange:#ff8500;
 $color-yellow:#ffd000;
 
-
-
 $primary-color: $color-pink;
 $secondary-color: $color-blue;
 $success-color: $color-green;
@@ -24,7 +22,6 @@ $success-color-rgb: extract-rgb($success-color);
 $warning-color-rgb: extract-rgb($warning-color);
 $alert-color-rgb: extract-rgb($warning-color);
 
-
 :root {
   --primary: #{$primary-color};
   --primary-rgb: #{$primary-color-rgb};
@@ -36,10 +33,7 @@ $alert-color-rgb: extract-rgb($warning-color);
   --warning-rgb: #{$warning-color-rgb};
   --alert: #{$warning-color};
   --alert-rgb: #{$warning-color-rgb};
-
 }
-
-
 
 $white: #ffffff;
 $black: #000000;

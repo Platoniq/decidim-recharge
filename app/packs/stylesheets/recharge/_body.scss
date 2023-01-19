@@ -1,12 +1,8 @@
 @import "./variables";
 
-
 body, .off-canvas-wrapper, .home-section:nth-of-type(2n + 1) {
   background-color: $body-background;
 }
-
-
-
 
 body, h1,
 .h1,
@@ -22,4 +18,3 @@ h6,
 .h6  {
   font-family: "NeuePlakTextRegular", "Helvetica", "Roboto", "Arial", sans-serif;
 }
-
