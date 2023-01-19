@@ -3,6 +3,19 @@
 
 
 .button.hollow {
-  color: $color-blue2;
+  color: $color-blue2 !important;
   border-color: $color-blue2;
 }
+
+.button.hollow:hover {
+  color: $black !important;
+}
+
+.button {
+  color: $black;
+}
+
+.button:hover {
+  color: $black;
+}
+
