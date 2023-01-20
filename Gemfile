@@ -26,6 +26,8 @@ gem "wicked_pdf", "~> 2.1"
 gem "sidekiq", "~> 6.0"
 gem "sidekiq-cron"
 
+gem "decidim-extra_user_fields", git: "https://github.com/fblupi/decidim-module-extra_user_fields", branch: DECIDIM_BRANCH
+
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
   gem "rubocop-faker"
