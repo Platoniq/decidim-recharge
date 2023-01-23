@@ -12,8 +12,8 @@ gem "decidim", DECIDIM_VERSION
 # gem "decidim-elections", DECIDIM_VERSION
 # gem "decidim-initiatives", DECIDIM_VERSION
 # gem "decidim-templates", DECIDIM_VERSION
-gem "decidim-extra_user_fields", git: "https://github.com/PopulateTools/decidim-module-extra_user_fields", branch: DECIDIM_BRANCH
 gem "decidim-decidim_awesome", "~> 0.8"
+gem "decidim-extra_user_fields", git: "https://github.com/PopulateTools/decidim-module-extra_user_fields", branch: DECIDIM_BRANCH
 gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer", branch: DECIDIM_BRANCH
 
 gem "bootsnap", "~> 1.3"
@@ -26,7 +26,6 @@ gem "wicked_pdf", "~> 2.1"
 
 gem "sidekiq", "~> 6.0"
 gem "sidekiq-cron"
-
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
