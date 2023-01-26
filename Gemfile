@@ -27,6 +27,7 @@ gem "sidekiq", "~> 6.0"
 gem "sidekiq-cron"
 
 gem "decidim-extra_user_fields", git: "https://github.com/fblupi/decidim-module-extra_user_fields", branch: DECIDIM_BRANCH
+gem "decidim-direct_verifications"
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
