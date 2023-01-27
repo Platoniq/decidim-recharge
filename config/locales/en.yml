@@ -30,6 +30,18 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+  decidim:
+    admin:
+      organization:
+        form:
+          linkedin: Linkedin
+    extra_user_fields:
+      admin:
+        extra_user_fields:
+          fields:
+            profession:
+              description: This field is a text field. User will be able to register a profession
+              label: Profession
   layouts:
     decidim:
       footer:
@@ -37,8 +49,3 @@ en:
       social_media_links:
         linkedin: "%{organization} at Linkedin"
 
-  decidim:
-    admin:
-      organization:
-        form:
-          linkedin: Linkedin
