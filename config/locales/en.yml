@@ -30,6 +30,14 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+  decidim:
+    admin:
+      organization:
+        form:
+          linkedin: Linkedin
+  devise:
+    registrations:
+      signed_up_but_unconfirmed: A message with a confirmation link has been sent to your email address (check spam folder) . Please follow the link to activate your account.
   layouts:
     decidim:
       footer:
@@ -37,8 +45,3 @@ en:
       social_media_links:
         linkedin: "%{organization} at Linkedin"
 
-  decidim:
-    admin:
-      organization:
-        form:
-          linkedin: Linkedin

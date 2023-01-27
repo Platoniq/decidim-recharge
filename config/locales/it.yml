@@ -8,3 +8,6 @@ it:
       organization:
         form:
           linkedin: Linkedin
+  devise:
+    registrations:
+      signed_up_but_unconfirmed: Un messaggio con un link di conferma è stato inviato al tuo indirizzo email (controlla la cartella spam). Segui il link per attivare il tuo account.
