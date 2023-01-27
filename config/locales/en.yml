@@ -41,7 +41,7 @@ en:
           fields:
             profession:
               description: This field is a text field. User will be able to register a profession
-              label: Profession
+              label: Enable profession field
   layouts:
     decidim:
       footer:

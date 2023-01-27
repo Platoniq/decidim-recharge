@@ -25,6 +25,7 @@ checksums = [
       "/app/forms/decidim/extra_user_fields/admin/extra_user_fields_form.rb" => "308415ba86b7753260418a533ffdd3df",
       "/app/commands/concerns/decidim/extra_user_fields/commands_overrides.rb" => "a849a1cf505801d57ca39df9c11ccbad",
       "/app/commands/decidim/extra_user_fields/admin/update_extra_user_fields.rb" => "bc6cd4528e845bcb029e5f811fcbc6ec",
+      "/app/serializers/decidim/extra_user_fields/user_export_serializer.rb" => "37a32d2d0ec46ed85d7bf1362d65fe2e",
     }
   }
 ]

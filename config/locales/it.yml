@@ -10,7 +10,7 @@ it:
           fields:
             profession:
               description: Questo campo è un campo di testo. L'utente potrà registrare una professione
-              label: Professione
+              label: Abilita campo professione
   layouts:
     decidim:
       social_media_links:
