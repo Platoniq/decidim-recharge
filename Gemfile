@@ -13,6 +13,7 @@ gem "decidim", DECIDIM_VERSION
 # gem "decidim-initiatives", DECIDIM_VERSION
 # gem "decidim-templates", DECIDIM_VERSION
 gem "decidim-decidim_awesome", "~> 0.8"
+gem "decidim-direct_verifications"
 gem "decidim-extra_user_fields", git: "https://github.com/PopulateTools/decidim-module-extra_user_fields", branch: DECIDIM_BRANCH
 gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer", branch: DECIDIM_BRANCH
 
