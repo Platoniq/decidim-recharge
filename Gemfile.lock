@@ -1,6 +1,6 @@
 GIT
-  remote: https://github.com/PopulateTools/decidim-module-extra_user_fields
-  revision: c0dddad0c1dd9e47ea18fb62dcf2e0a0694f50d1
+  remote: https://github.com/Platoniq/decidim-module-extra_user_fields
+  revision: b7b4aea8d2b768413ec004aab6921a9d60f5a817
   branch: release/0.26-stable
   specs:
     decidim-extra_user_fields (0.26.4)
