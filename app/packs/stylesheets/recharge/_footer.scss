@@ -28,6 +28,10 @@
         width: 15rem;
       }
     }
+    p {
+      font-size: 0.5rem;
+      margin-bottom: 0;
+    }
   }
   .row {
     display: flex;
@@ -59,4 +63,8 @@
   span {
     color: #404040;
   }
+}
+
+.decidim-logo img {
+  filter: brightness(0);
 }
