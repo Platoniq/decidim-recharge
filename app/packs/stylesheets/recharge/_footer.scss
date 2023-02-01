@@ -31,6 +31,7 @@
     p {
       font-size: 0.5rem;
       margin-bottom: 0;
+      font-family: NeuePlakTextRegular;
     }
   }
   .row {
@@ -67,4 +68,20 @@
 
 .decidim-logo img {
   filter: brightness(0);
+}
+
+.main__footer__social{
+  text-align: center;
+
+  @include breakpoint(medium){
+    text-align: right;
+  }
+
+  p {
+    text-align: center !important;
+    margin-left: 25px;
+    margin-bottom: 0;
+    color: #404040;
+    padding-top: 0.5rem;
+  }
 }
