@@ -35,6 +35,7 @@ en:
       footer:
         cc_by_license: Creative Commons License by SA
       social_media_links:
+        follow_us: "Follow us:"
         linkedin: "%{organization} at Linkedin"
 
   decidim:
