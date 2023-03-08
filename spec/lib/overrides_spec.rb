@@ -11,8 +11,8 @@ checksums = [
     files: {
       # layouts
       "/app/views/layouts/decidim/_head_extra.html.erb" => "1b8237357754cf519f4e418135f78440",
-      "/app/cells/decidim/content_blocks/footer_sub_hero/show.erb" => "63cf57bc81b6e08523f3c31e7db7b1f4",
-      "/app/cells/decidim/content_blocks/sub_hero/show.erb" => "528852634af98609d2069d0f126d04a2"
+      "/app/cells/decidim/content_blocks/footer_sub_hero/show.erb" => "34475b7db4216b7d920cd72bff4771c7",
+      "/app/cells/decidim/content_blocks/sub_hero/show.erb" => "d4802c6523f6e5b40af6f6e3769afba8"
     }
   }
 ]
