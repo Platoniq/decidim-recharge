@@ -11,19 +11,18 @@ checksums = [
     files: {
       # layouts
       "/app/views/layouts/decidim/_head_extra.html.erb" => "1b8237357754cf519f4e418135f78440",
-      "/app/views/layouts/decidim/_js_configuration.html.erb" => "e0ab7ab926cc6cd2893bb6230f2d9a1b",
       "/app/views/layouts/decidim/_logo.html.erb" => "ab01dd1df9ce62cbd62f640a3b5018b2",
       "/app/views/layouts/decidim/_mini_footer.html.erb" => "5a842f3e880f24f49789ee2f72d96f60",
       "/app/views/layouts/decidim/_social_media_links.html.erb" => "497ce000e2e646fb4fba373961410252",
       "/app/cells/decidim/content_blocks/footer_sub_hero/show.erb" => "34475b7db4216b7d920cd72bff4771c7",
       "/app/cells/decidim/content_blocks/sub_hero/show.erb" => "d4802c6523f6e5b40af6f6e3769afba8",
-      "/app/models/decidim/organization.rb" => "4d1f1e1881dbde53e8252b0b9b321fa7"
+      "/app/models/decidim/organization.rb" => "e0b67b906f0ad3db84226914f07a05e7"
     }
   },
   {
     package: "decidim-admin",
     files: {
-      "/app/commands/decidim/admin/update_organization.rb" => "5696aff81d64e3d79db9fc13a0ed7baa",
+      "/app/commands/decidim/admin/update_organization.rb" => "8ed4358723b204274310afbd40f151df",
       "/app/forms/decidim/admin/organization_form.rb" => "edb36b620d4d27e2e8d01ecee1dd0d2e"
     }
   }
