@@ -78,7 +78,6 @@ RSpec.configure do |config|
 
     I18n.available_locales = available_locales
     I18n.default_locale = default_locale
-    I18n.locale = default_locale
 
     Decidim.available_locales = available_locales
     Decidim.default_locale = default_locale

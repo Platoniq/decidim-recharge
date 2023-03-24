@@ -3,8 +3,8 @@
 source "https://rubygems.org"
 
 ruby RUBY_VERSION
-DECIDIM_BRANCH = "release/0.26-stable"
-DECIDIM_VERSION = "0.26.4"
+DECIDIM_BRANCH = "release/0.27-stable"
+DECIDIM_VERSION = "0.27.2"
 
 gem "decidim", DECIDIM_VERSION
 gem "decidim-conferences", DECIDIM_VERSION
@@ -12,10 +12,10 @@ gem "decidim-conferences", DECIDIM_VERSION
 # gem "decidim-elections", DECIDIM_VERSION
 # gem "decidim-initiatives", DECIDIM_VERSION
 # gem "decidim-templates", DECIDIM_VERSION
-gem "decidim-decidim_awesome", "~> 0.8"
-gem "decidim-direct_verifications"
+gem "decidim-decidim_awesome", git: "https://github.com/decidim-ice/decidim-module-decidim_awesome", branch: "main"
+gem "decidim-direct_verifications", git: "https://github.com/Platoniq/decidim-verifications-direct_verifications", branch: DECIDIM_BRANCH
 gem "decidim-extra_user_fields", git: "https://github.com/Platoniq/decidim-module-extra_user_fields", branch: DECIDIM_BRANCH
-gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer", branch: DECIDIM_BRANCH
+gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer", branch: "master"
 
 gem "bootsnap", "~> 1.3"
 
