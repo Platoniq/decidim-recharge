@@ -25,12 +25,6 @@ checksums = [
       "/app/commands/decidim/admin/update_organization.rb" => "8ed4358723b204274310afbd40f151df",
       "/app/forms/decidim/admin/organization_form.rb" => "edb36b620d4d27e2e8d01ecee1dd0d2e"
     }
-  },
-  {
-    package: "decidim-blogs",
-    files: {
-      "/app/views/decidim/blogs/posts/show.html.erb" => "9a86cb2784e3bb603e988977cef53470"
-    }
   }
 ]
 
