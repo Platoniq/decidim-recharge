@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-body = {"en": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><iframe class=\"ql-video\" frameborder=\"0\" allowfullscreen=\"true\" src=\"https://youtu.be/dQw4w9WgXcQ\" data-accessibility-violation=\"true\"></iframe>", "it": ""}
+body = { en: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><iframe class=\"ql-video\" frameborder=\"0\" allowfullscreen=\"true\" src=\"https://youtu.be/dQw4w9WgXcQ\" data-accessibility-violation=\"true\"></iframe>", it: "" }
 
 require "rails_helper"
 
