@@ -2,3 +2,4 @@
 
 require "decidim/core/test/factories"
 require "decidim/decidim_awesome/test/factories"
+require "decidim/blogs/test/factories"
