@@ -1,4 +1,14 @@
 GIT
+  remote: https://github.com/Platoniq/decidim-module-alternative_landing
+  revision: 110292c2b0f30fe4483635ad8a1c5d1df79d0581
+  branch: main
+  specs:
+    decidim-alternative_landing (0.4.0)
+      decidim-admin (>= 0.27.0, < 0.28)
+      decidim-core (>= 0.27.0, < 0.28)
+      redcarpet (~> 3.4)
+
+GIT
   remote: https://github.com/Platoniq/decidim-module-extra_user_fields
   revision: c22953e2045be18a367a477d567d0380085c1276
   branch: release/0.27-stable
@@ -931,6 +941,7 @@ DEPENDENCIES
   capistrano-rbenv
   capistrano-sidekiq
   decidim (= 0.27.3)
+  decidim-alternative_landing!
   decidim-conferences (= 0.27.3)
   decidim-decidim_awesome!
   decidim-dev (= 0.27.3)
