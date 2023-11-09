@@ -45,7 +45,7 @@
       <li>
         <a class="footer-social__icon" target="_blank" rel="noopener" href="https://www.linkedin.com/<%= current_organization.linkedin_handler %>">
           <span class="show-for-sr"><%= t("layouts.decidim.social_media_links.linkedin", organization: translated_attribute(current_organization.name)) %></span>
-          <%= icon "linkedin", role: "img", aria_label: "Linkedin" %>
+          <%= external_icon "media/images/linkedin-logo.svg" %>
         </a>
       </li>
     <% end %>
