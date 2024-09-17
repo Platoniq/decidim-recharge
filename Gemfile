@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 DECIDIM_BRANCH = "release/0.27-stable"
-DECIDIM_VERSION = "0.27.3"
+DECIDIM_VERSION = "0.27.4"
 
 gem "decidim", DECIDIM_VERSION
 gem "decidim-conferences", DECIDIM_VERSION
