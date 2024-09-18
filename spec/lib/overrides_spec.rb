@@ -14,25 +14,24 @@ checksums = [
       "/app/views/layouts/decidim/_logo.html.erb" => "ab01dd1df9ce62cbd62f640a3b5018b2",
       "/app/views/layouts/decidim/_mini_footer.html.erb" => "5a842f3e880f24f49789ee2f72d96f60",
       "/app/views/layouts/decidim/_social_media_links.html.erb" => "497ce000e2e646fb4fba373961410252",
-      "/app/cells/decidim/content_blocks/footer_sub_hero/show.erb" => "34475b7db4216b7d920cd72bff4771c7",
-      "/app/cells/decidim/content_blocks/sub_hero/show.erb" => "d4802c6523f6e5b40af6f6e3769afba8",
-      "/app/models/decidim/organization.rb" => "e0b67b906f0ad3db84226914f07a05e7"
+      "/app/cells/decidim/content_blocks/footer_sub_hero/show.erb" => "7cc7e6378786032a70e700a3273d1198",
+      "/app/cells/decidim/content_blocks/sub_hero/show.erb" => "1624a0f9382010481af8c2b94bdd61fe",
+      "/app/models/decidim/organization.rb" => "04eaf4467a1e0d891251c5cedf71f5e4"
     }
   },
   {
     package: "decidim-admin",
     files: {
-      "/app/commands/decidim/admin/update_organization.rb" => "8ed4358723b204274310afbd40f151df",
-      "/app/forms/decidim/admin/organization_form.rb" => "edb36b620d4d27e2e8d01ecee1dd0d2e",
-      "/app/models/decidim/organization.rb" => "e0b67b906f0ad3db84226914f07a05e7"
+      "/app/commands/decidim/admin/update_organization.rb" => "6f02b3ece9f7039d5179360d42704469",
+      "/app/forms/decidim/admin/organization_form.rb" => "23d64335c187cbd8cd4db6524d48bfdc",
+      "/app/models/decidim/organization.rb" => "04eaf4467a1e0d891251c5cedf71f5e4"
     }
   }
 ]
 
 describe "Overriden files", type: :view do
-  # rubocop:disable Rails/DynamicFindBy
   checksums.each do |item|
-    spec = ::Gem::Specification.find_by_name(item[:package])
+    spec = Gem::Specification.find_by_name(item[:package])
 
     item[:files].each do |file, signature|
       it "#{spec.gem_dir}#{file} matches checksum" do
@@ -40,7 +39,6 @@ describe "Overriden files", type: :view do
       end
     end
   end
-  # rubocop:enable Rails/DynamicFindBy
 
   private
 
