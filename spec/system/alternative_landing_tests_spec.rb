@@ -2,8 +2,8 @@
 
 require "rails_helper"
 
-describe "Alternative landing", type: :system do
-  let(:organization) { create :organization }
+describe "AlternativeLanding" do
+  let(:organization) { create(:organization) }
   let!(:user) { create(:user, :admin, :confirmed, organization: organization) }
 
   before do

@@ -2,12 +2,12 @@
 
 require "rails_helper"
 
-describe "post with iframe", type: :system do
+describe "PostWithIframe" do
   include_context "with a component"
   let(:manifest_name) { "blogs" }
   let(:body) { { en: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><iframe class=\"ql-video\" frameborder=\"0\" allowfullscreen=\"true\" src=\"https://youtu.be/dQw4w9WgXcQ\" data-accessibility-violation=\"true\"></iframe>" } }
   let(:title) { { en: "Blog post title" } }
-  let(:post) { create :post, component: component, body: body, title: title }
+  let(:post) { create(:post, component: component, body: body, title: title) }
 
   before do
     visit_component
@@ -16,6 +16,6 @@ describe "post with iframe", type: :system do
   end
 
   it "shows the iframe" do
-    expect(page).to have_selector('iframe[src="https://youtu.be/dQw4w9WgXcQ"]')
+    expect(page).to have_css('iframe[src="https://youtu.be/dQw4w9WgXcQ"]')
   end
 end
