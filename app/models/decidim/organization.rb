@@ -47,7 +47,8 @@ module Decidim
     validates :default_locale, inclusion: { in: :available_locales }
 
     has_one_attached :official_img_header
-    validates_upload :official_img_header, uploader: Decidim::OfficialImageHeaderUploader
+    # validates_upload :official_img_header, uploader: Decidim::OfficialImageHeaderUploader
+    validates_upload :official_img_header, uploader: Decidim::OfficialImageFooterUploader
 
     has_one_attached :official_img_footer
     validates_upload :official_img_footer, uploader: Decidim::OfficialImageFooterUploader
