@@ -31,11 +31,11 @@ gem "sidekiq", "~> 6.0"
 gem "sidekiq-cron"
 
 group :development, :test do
-  gem "byebug", "~> 11.0", platform: :mri
-  gem "rubocop-faker"
-  gem "mdl"
   gem "brakeman"
+  gem "byebug", "~> 11.0", platform: :mri
   gem "decidim-dev", DECIDIM_VERSION
+  gem "mdl"
+  gem "rubocop-faker"
 end
 
 group :development do
