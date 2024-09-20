@@ -9,6 +9,7 @@
     "@decidim/elections": "^0.28.3",
     "@decidim/webpacker": "^0.28.3",
     "@fullcalendar/core": "^6.1.15",
+    "@fullcalendar/timegrid": "^6.1.15",
     "@rails/actioncable": "^6.1.7",
     "@types/babel__core": "7",
     "@types/webpack": "5",
