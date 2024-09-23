@@ -62,3 +62,4 @@ config/deploy*
 
 public/sw.js*
 public/sw.js.map*
+tailwind.config.js

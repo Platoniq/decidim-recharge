@@ -29,9 +29,8 @@ checksums = [
 ]
 
 describe "Overridden files", type: :view do
-  # rubocop:disable Rails/DynamicFindBy
   checksums.each do |item|
-    spec = ::Gem::Specification.find_by_name(item[:package])
+    spec = Gem::Specification.find_by_name(item[:package])
 
     item[:files].each do |file, signature|
       next unless spec
@@ -41,7 +40,6 @@ describe "Overridden files", type: :view do
       end
     end
   end
-  # rubocop:enable Rails/DynamicFindBy
 
   private
 

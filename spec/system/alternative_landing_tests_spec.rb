@@ -2,9 +2,9 @@
 
 require "rails_helper"
 
-describe "Alternative landing", type: :system do
-  let(:organization) { create :organization }
-  let!(:user) { create(:user, :admin, :confirmed, organization: organization) }
+describe "Alternative landing" do
+  let(:organization) { create(:organization) }
+  let!(:user) { create(:user, :admin, :confirmed, organization:) }
 
   before do
     switch_to_host(organization.host)
