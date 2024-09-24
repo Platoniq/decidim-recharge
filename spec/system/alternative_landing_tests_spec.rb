@@ -12,9 +12,8 @@ describe "Alternative landing" do
     visit decidim_admin.edit_organization_homepage_path
   end
 
-  it "shows content blocks from alternative landing" do
-    within ".js-list-availables" do
+  it "renders all alternative landing content blocks" do
+      click_on "Add content block"
       expect(page).to have_content("Upcoming meetings (Alternative)")
-    end
   end
 end
