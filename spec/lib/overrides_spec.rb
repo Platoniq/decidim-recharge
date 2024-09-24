@@ -12,8 +12,8 @@ checksums = [
       # layouts
       "/app/views/layouts/decidim/_head_extra.html.erb" => "1b8237357754cf519f4e418135f78440",
       "/app/views/layouts/decidim/_logo.html.erb" => "ab01dd1df9ce62cbd62f640a3b5018b2",
-      "/app/views/layouts/decidim/_mini_footer.html.erb" => "5a842f3e880f24f49789ee2f72d96f60",
-      "/app/views/layouts/decidim/_social_media_links.html.erb" => "497ce000e2e646fb4fba373961410252",
+      "/app/views/layouts/decidim/footer/_main_social_media_links.html.erb" => "55465bee8d94bfef06d1e57202dae6b6",
+      "/app/views/layouts/decidim/footer/_mini.html.erb" => "ccead2f5f20557ea4db1501de943f82b",
       "/app/cells/decidim/content_blocks/footer_sub_hero/show.erb" => "7cc7e6378786032a70e700a3273d1198",
       "/app/cells/decidim/content_blocks/sub_hero/show.erb" => "1624a0f9382010481af8c2b94bdd61fe",
       "/app/models/decidim/organization.rb" => "04eaf4467a1e0d891251c5cedf71f5e4" # add linkedin to social handlers
