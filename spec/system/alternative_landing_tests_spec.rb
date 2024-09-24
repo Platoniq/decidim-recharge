@@ -14,7 +14,7 @@ describe "Alternative landing" do
 
   it "shows content blocks from alternative landing" do
     within ".js-list-availables" do
-      expect(page).to have_text("Upcoming meetings (Alternative)")
+      expect(page).to have_content("Upcoming meetings (Alternative)")
     end
   end
 end
