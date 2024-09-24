@@ -13,7 +13,7 @@ describe "Alternative landing" do
   end
 
   it "renders all alternative landing content blocks" do
-      click_on "Add content block"
-      expect(page).to have_content("Upcoming meetings (Alternative)")
+    click_on "Add content block"
+    expect(page).to have_content("Upcoming meetings (Alternative)")
   end
 end
