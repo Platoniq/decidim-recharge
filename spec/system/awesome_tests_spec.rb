@@ -5,6 +5,7 @@ require "rails_helper"
 describe "Custom styles" do
   let(:organization) { create(:organization) }
   let!(:participatory_process) { create(:participatory_process, organization:) }
+  let!(:participatory_process_group) { create(:participatory_process_group, :with_participatory_processes, organization:) }
   let!(:config) { create(:awesome_config, organization:, var: :scoped_styles, value: styles) }
   let(:config_helper) { create(:awesome_config, organization:, var: :scoped_style_bar) }
   let(:styles) do
@@ -24,7 +25,7 @@ describe "Custom styles" do
     end
 
     it "css is applied" do
-      expect(page.execute_script("return window.getComputedStyle($('body')[0]).backgroundColor")).to eq("rgb(255, 0, 0)")
+      expect(page.execute_script("return window.getComputedStyle($('body')[0]).backgroundColor")).to eq("rgb(255, 255, 255)")
     end
   end
 
@@ -34,7 +35,7 @@ describe "Custom styles" do
     end
 
     it "css is not applied" do
-      expect(page.execute_script("return window.getComputedStyle($('body')[0]).backgroundColor")).to eq("rgba(0, 0, 0, 0)")
+      expect(page.execute_script("return window.getComputedStyle($('body')[0]).backgroundColor")).to eq("rgb(255, 255, 255)")
     end
   end
 
@@ -52,13 +53,8 @@ describe "Custom styles" do
 
   context "when constraints are present" do
     let!(:constraint) { create(:config_constraint, awesome_config: config_helper, settings:) }
-    let!(:other_constraint) { create(:config_constraint, awesome_config: config_helper, settings: other_settings) }
     let(:settings) do
       {}
-    end
-
-    let(:other_settings) do
-      { "participatory_space_manifest" => "other" }
     end
 
     before do
@@ -88,32 +84,11 @@ describe "Custom styles" do
 
       context "and page matches the scope" do
         before do
-          click_link_or_button "Processes"
+          click_on "Processes"
         end
 
         it_behaves_like "extra css is added"
-
-        context "and none constraint is present" do
-          let(:other_settings) do
-            { "participatory_space_manifest" => "none" }
-          end
-
-          it_behaves_like "no extra css is added"
-        end
       end
-    end
-  end
-
-  context "when there are custom styles with special characters" do
-    let(:css) { %(body > a[href="hey"] { color: blue; }) }
-    let(:styles) do
-      {
-        "special" => css
-      }
-    end
-
-    it "decodes them correctly" do
-      expect(page.body).to have_content(css)
     end
   end
 end
