@@ -18,3 +18,48 @@ h6,
 .h6  {
   font-family: "NeuePlakTextRegular", "Helvetica", "Roboto", "Arial", sans-serif;
 }
+
+.h1 {
+  font-size: 4em;
+}
+
+.decorator, .social-heading, .section-heading {
+  font-weight: bold;
+}
+
+.section-heading::before, .home__section-title::before, .h2::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 1.35em;
+  background-color: var(--primary);
+  margin-right: 0.5rem;
+  margin-bottom: -0.5rem;
+  vertical-align: top;
+}
+
+.layout-2col__main.content_block > .decorator::after {
+  display: none;
+}
+
+.home__section-title::after {
+  display: none;
+}
+
+.stack-vertical > .decorator::after, .latest-blog-posts > .decorator::after.decorator::after {
+  display: none;
+}
+
+.social-heading, .section-heading {
+  text-transform: uppercase;
+}
+
+.stack {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.stack-vertical .stack {
+  gap: 1em;
+}

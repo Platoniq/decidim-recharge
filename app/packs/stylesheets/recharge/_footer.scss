@@ -1,11 +1,14 @@
 @import "./variables";
 
-.footer {
-  background: $footer-bg;
+.main-footer {
+  background: $footer-bg !important;
 }
 
+.main-footer__top,
+.main-footer__top * {
+  color: black !important;
+}
 .mini-footer,
-.main-footer,
 .eu-footer {
   background: none;
 }
@@ -53,18 +56,25 @@
   }
 }
 
-.main-footer,
 .mini-footer {
   a {
-    color: #404040;
+    color: $white;
     &:hover {
       color: darken($medium-gray, 40%);
     }
   }
   span {
-    color: #404040;
+    color: $white;
   }
 }
+
+.main-footer__down a,
+.main-footer__down svg {
+    color: black !important;
+    fill: black !important;
+    stroke: black !important;
+}
+
 
 .decidim-logo img {
   filter: brightness(0);
@@ -73,7 +83,7 @@
 .main__footer__social{
   text-align: center;
 
-  @include breakpoint(medium){
+  @media (min-width: 768px) {
     text-align: right;
   }
 
