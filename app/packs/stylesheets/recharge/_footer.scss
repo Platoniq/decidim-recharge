@@ -13,6 +13,14 @@
   background: none;
 }
 
+.main-footer__language-trigger {
+  border-color: $black !important;
+}
+
+.main-footer__language-trigger span[data-accessibility-violation="true"] {
+  color: black !important;
+}
+
 .eu-footer {
   .eu-disclaimer {
     display: flex;
