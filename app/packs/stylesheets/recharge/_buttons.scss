@@ -19,6 +19,10 @@
   color: $black;
 }
 
-#home__menu > div > div:nth-child(3) > a {
+#home__menu a {
   border: none !important;
+}
+
+#homepage-upcoming-meetings > div.content-block__title > a {
+  padding: .5em;
 }

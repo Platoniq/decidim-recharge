@@ -32,7 +32,7 @@ h6,
   display: inline-block;
   width: 4px;
   height: 1.35em;
-  background-color: var(--primary);
+  background-color: $color-pink;
   margin-right: 0.5rem;
   margin-bottom: -0.5rem;
   vertical-align: top;
@@ -50,6 +50,10 @@ h6,
   display: none;
 }
 
+#homepage-upcoming-meetings > div.content-block__title > h2::after {
+  display: none;
+}
+
 .social-heading, .section-heading {
   text-transform: uppercase;
 }
@@ -62,4 +66,8 @@ h6,
 
 .stack-vertical .stack {
   gap: 1em;
+}
+
+.card__calendar-list__reset > time > span.card__calendar-month {
+  color: $black;
 }
