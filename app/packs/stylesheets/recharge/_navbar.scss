@@ -19,6 +19,10 @@ header .main-bar__search input[type=text] {
   color: $white;
 }
 
+#form-search_topbar > button > svg {
+  fill: $white;
+}
+
 .main-bar__links-desktop svg {
   fill: $black !important;
   stroke: $black !important;

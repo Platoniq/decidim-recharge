@@ -18,3 +18,7 @@
 .button:hover {
   color: $black;
 }
+
+#home__menu > div > div:nth-child(3) > a {
+  border: none !important;
+}
