@@ -453,7 +453,7 @@ GEM
       logger
     faraday-net_http (3.3.0)
       net-http
-    ffi (1.17.0-arm64-darwin)
+    ffi (1.17.0)
     figaro (1.2.0)
       thor (>= 0.14.0, < 2)
     file_validators (3.0.0)
@@ -601,6 +601,8 @@ GEM
     net-ssh (7.1.0)
     nio4r (2.7.3)
     nokogiri (1.16.7-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.16.7-x86_64-linux)
       racc (~> 1.4)
     oauth (1.1.0)
       oauth-tty (~> 1.0, >= 1.0.1)
@@ -922,6 +924,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-24
+  x86_64-linux
 
 DEPENDENCIES
   aws-sdk-s3
