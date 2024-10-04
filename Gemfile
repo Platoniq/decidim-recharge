@@ -31,6 +31,7 @@ gem "sidekiq", "~> 6.0"
 gem "sidekiq-cron"
 
 gem "mini_portile2", "~> 2.8", ">= 2.8.5"
+gem "base64", "~> 0.2.0"
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
