@@ -23,6 +23,11 @@
   border: none !important;
 }
 
-#homepage-upcoming-meetings > div.content-block__title > a {
+#homepage-upcoming-meetings > div.content-block__title > a,
+#last_activity > div.home__section-header > a,
+#highlighted-processes > div.home__section-header > a,
+#highlighted-assemblies > div.home__section-header > a,
+#highlighted-conferences > div.home__section-header > a,
+#last_activity > div.home__section-header > a {
   padding: .5em;
 }

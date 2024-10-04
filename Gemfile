@@ -30,6 +30,8 @@ gem "wicked_pdf", "~> 2.1"
 gem "sidekiq", "~> 6.0"
 gem "sidekiq-cron"
 
+gem 'mini_portile2', '~> 2.8', '>= 2.8.5'
+
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
   gem "rubocop-faker"
