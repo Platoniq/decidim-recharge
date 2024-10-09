@@ -60,5 +60,6 @@ config/deploy*
 # Ignore rspec results
 .rspec-failures
 
-public/sw.js
-public/sw.js.map
+public/sw.js*
+public/sw.js.map*
+tailwind.config.js

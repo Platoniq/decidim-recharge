@@ -2,9 +2,9 @@ it:
   layouts:
     decidim:
       social_media_links:
-        linkedin: "%{organization} at Linkedin"
+        linkedin: "%{organization} at LinkedIn"
   decidim:
     admin:
       organization:
         form:
-          linkedin: Linkedin
+          linkedin: LinkedIn

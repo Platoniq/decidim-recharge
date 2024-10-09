@@ -1,3 +1,16 @@
+@import "recharge/variables";
+@import "recharge/footer";
+@import "recharge/navbar";
+@import "recharge/body";
+@import "recharge/buttons";
+@import "recharge/cards";
+@import "recharge/typography";
+@import "recharge/orgchart";
+@import "recharge/omnipresent_banner";
+@import "recharge/cover";
+@import "recharge/processes";
+@import "recharge/home_menu";
+
 @font-face {
   font-family: "NeuePlakTextRegular";
   font-display: swap;
@@ -5,23 +18,23 @@
    url('fonts/NeuePlakTextRegular/font.woff2') format('woff2');
 }
 
-.sign-up-link{
+.sign-up-link {
   border-radius: 4px;
-  text-transform:none;
+  text-transform: none;
   text-decoration: none;
   background: $dark-gray;
-  color:#ffffff !important;
-  padding:0.5rem;
-  transition:all ease-in-out 200ms
+  color: #ffffff !important;
+  padding: 0.5rem;
+  transition: all ease-in-out 200ms
 }
 
-.sign-up-link:hover{
-  text-decoration:none !important;
-  background:var(--primary);
+.sign-up-link:hover {
+  text-decoration: none !important;
+  background: var(--primary);
   color: $black !important;
 }
 
-.sign-in-link{
+.sign-in-link {
   border-radius: 4px;
   text-transform:none;
   text-decoration:none;
@@ -31,26 +44,8 @@
   transition:all ease-in-out 200ms
 }
 
-.sign-in-link:hover{
+.sign-in-link:hover {
   text-decoration: none !important;
-  background:var(--primary);
+  background: var(--primary);
   color: $black !important;
 }
-
-.omnipresent-banner{
-  background-color: var(--primary);
-  color: #000000;
-
-  a{
-    color: #000000;
-  }
-}
-
-@import "recharge/variables";
-@import "recharge/footer";
-@import "recharge/navbar";
-@import "recharge/body";
-@import "recharge/buttons";
-@import "recharge/cards";
-@import "recharge/typography";
-@import "recharge/orgchart";

@@ -1,0 +1,46 @@
+.home__menu {
+  background: #2c2930;
+}
+
+#home__menu > div > div > a:hover {
+  color: $white !important;
+}
+
+.home__menu-element::after, .home__menu-element:last-child::before   {
+  display: none;
+}
+
+.home__menu-element--link {
+  color: $white;
+  background: none !important;
+}
+
+.menu-bar__breadcrumb-desktop__dropdown-wrapper a,
+.menu-bar__breadcrumb-desktop__dropdown-wrapper button {
+    color: $white !important;
+}
+
+.menu-bar__breadcrumb-desktop__dropdown-wrapper svg {
+    fill: $white !important;
+    stroke: $white !important;
+}
+
+#main-dropdown-summary-mobile > svg {
+  fill: $black;
+}
+
+#main-bar > div > div.main-bar__links-desktop > div.main-bar__links-desktop__item-wrapper {
+  border-color: $black !important;
+}
+
+header .main-bar__links-desktop__item:hover {
+  background-color: $color-pink !important;
+  text-decoration-line: none !important;
+  span {
+    color: $white !important;
+  }
+}
+
+#input-search {
+  color: $white !important;
+}
