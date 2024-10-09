@@ -28,6 +28,7 @@ gem "faker"
 gem "wicked_pdf", "~> 2.1"
 
 gem "base64", "0.1.1"
+gem "stringio", "3.1.0"
 
 gem "sidekiq", "~> 6.0"
 gem "sidekiq-cron"
