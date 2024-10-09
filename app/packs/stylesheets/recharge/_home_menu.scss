@@ -2,6 +2,10 @@
   background: #2c2930;
 }
 
+#home__menu > div > div > a:hover {
+  color: $white !important;
+}
+
 .home__menu-element::after, .home__menu-element:last-child::before   {
   display: none;
 }
@@ -27,4 +31,12 @@
 
 #main-bar > div > div.main-bar__links-desktop > div.main-bar__links-desktop__item-wrapper {
   border-color: $black !important;
+}
+
+header .main-bar__links-desktop__item:hover {
+  background-color: $color-pink !important;
+  text-decoration-line: none !important;
+  span {
+    color: $white !important;
+  }
 }

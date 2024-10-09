@@ -1,27 +1,32 @@
 .omnipresent-banner {
-  background-color: var(--primary);
+  background-color: $color-pink;
   color: #000000;
   text-align: center;
   padding: 1rem;
   font-size: 1.2em;
   text-decoration: none;
+
   a {
     color: #000000;
     line-height: inherit;
     text-decoration: none;
     cursor: pointer;
   }
-  a:hover {
-    color: #FFFFFF;
-    .omnipresent-banner svg {
-      color:#FFFFFF;
-    }
+}
+
+.omnipresent-banner:hover {
+  background-color: $color-pink !important;
+  color: white !important;
+  svg {
+    fill: white !important;
   }
 }
+
 .omnipresent-banner .omnipresent-banner-title {
   font-weight: bold;
   margin-right: 1em;
 }
+
 .omnipresent-banner svg {
   width: 0.875em;
   height: 0.875em;
