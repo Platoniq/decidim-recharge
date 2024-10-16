@@ -1,16 +1,51 @@
 @import "./variables";
 
 $navbar-color: $white;
-$navbar-color-hover: rgba(white, .5);
-$navbar-active-color: rgba(white, .7);
+$navbar-color-hover: rgba($white, .5);
+$navbar-active-color: rgba($white, .7);
 
-.title-bar {
+#main-bar {
   background-image: url("images/background_recharge_pink.png");
   background-size: contain;
   color: $black;
+  padding: 1rem 0.5rem;
 }
 
-.topbar__dropmenu > ul > li > a, .topbar__admin__link a{
+header .main-bar__search input[type=text] {
+  background: #2C2930;
+}
+
+#input-search::placeholder {
+  color: $white;
+}
+
+#form-search_topbar > button > svg {
+  fill: $white;
+}
+
+.main-bar__links-desktop svg {
+  fill: $black !important;
+  stroke: $black !important;
+}
+
+.main-bar__links-desktop span {
+  color: $black !important;
+}
+
+.menu-bar__breadcrumb-desktop__dropdown-trigger svg {
+  color: $white;
+}
+
+header .menu-bar__breadcrumb-desktop [data-target*=dropdown] > svg {
+  color: $white;
+  fill: $white;
+}
+
+.admin-bar__button {
+  background: $color-pink !important;
+}
+
+.topbar__dropmenu > ul > li > a, .topbar__admin__link a {
   color: $black;
   font-weight: 600;
 }
@@ -25,7 +60,7 @@ $navbar-active-color: rgba(white, .7);
   }
 }
 
-.topbar__admin__link a span{
+.topbar__admin__link a span {
   padding-left: 0.3rem;
 }
 
@@ -58,19 +93,18 @@ $navbar-active-color: rgba(white, .7);
   }
 }
 
-.topbar__user{
+.topbar__user {
   display: inline-block;
   padding-right: 2.5rem;
   margin-left: 2rem;
 
-  @media (min-width: (1300 * .0625) + em){
+  @media (min-width: calc(1300 * 0.0625em)) {
     padding-right: 2.5rem;
   }
 }
 
-.topbar__user__logged{
-
-  @media (min-width: (1300 * .0625) + em){
+.topbar__user__logged {
+  @media (min-width: calc(1300 * 0.0625em)) {
     padding-right: 2.5rem;
   }
 }
