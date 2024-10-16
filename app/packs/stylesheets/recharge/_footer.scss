@@ -80,6 +80,10 @@
   }
 }
 
+body > div.layout-container > footer > div.mini-footer > div.mini-footer__content.flex-wrap.gap-8 > div > div:nth-child(2) > div > a:hover {
+  color: $color-pink !important;
+}
+
 .main-footer__down a,
 .main-footer__down svg {
     color: black !important;
