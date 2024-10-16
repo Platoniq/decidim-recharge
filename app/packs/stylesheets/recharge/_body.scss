@@ -1,5 +1,27 @@
 @import "./variables";
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+  text-align: center;
+}
+
 body, .off-canvas-wrapper, .home-section:nth-of-type(2n + 1) {
   background-color: $body-background;
 }
@@ -47,12 +69,14 @@ h6,
 }
 
 .stack-vertical > .decorator::after, .latest-blog-posts > .decorator::after.decorator::after,
-#content > main > section.stack-vertical.layout-2col__main.content-block > h1::after,
-#html-block-html > div > h2::after,
-#blogs > h2::after,
+#content > main > section.stack-vertical.layout-2col__main.content-block > .decorator::after,
+#html-block-html > div > .decorator::after,
+#blogs > .decorator::after,
 #homepage-upcoming-meetings > div.content-block__title > h2::after,
-body > footer > div.main-footer > div.main-footer__top > div.lg\:w-1\/3 {
+body > footer > div.main-footer > div.main-footer__top > div.lg\:w-1\/3,
+.decorator::after {
   display: none !important;
+  background-color: transparent !important;
 }
 
 .social-heading, .section-heading {
