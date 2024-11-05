@@ -45,15 +45,6 @@ h6,
   display: none;
 }
 
-// .stack-vertical > .decorator::after, .latest-blog-posts > .decorator::after.decorator::after,
-// #content > main > section.stack-vertical.layout-2col__main.content-block > .decorator::after,
-// #html-block-html > div > .decorator::after,
-// #blogs > .decorator::after,
-// #blogs > h2::after,
-// #content > main > section.stack-vertical.layout-2col__main.content-block > h1::after,
-// #html-block-html > div > h2::after,
-// #homepage-upcoming-meetings > div.content-block__title > h2::after,
-// body > footer > div.main-footer > div.main-footer__top > div.lg\:w-1\/3,
 .decorator::after, .title-decorator::after {
   display: none !important;
 }
@@ -74,4 +65,12 @@ h6,
 
 .card__calendar-list__reset > time > span.card__calendar-month {
   color: $black;
+}
+
+div.stack-body {
+  text-align: center;
+}
+
+.stack-item {
+  border: none !important;
 }
