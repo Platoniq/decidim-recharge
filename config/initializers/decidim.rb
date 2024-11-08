@@ -176,7 +176,7 @@ Decidim.configure do |config|
   # that an organization's administrator injects malicious scripts to spy on or
   # take over user accounts.
   #
-  config.enable_html_header_snippets = Rails.application.secrets.decidim[:enable_html_header_snippets].present?
+  config.enable_html_header_snippets = true
 
   # Allow organizations admins to track newsletter links.
   config.track_newsletter_links = Rails.application.secrets.decidim[:track_newsletter_links].present? unless Rails.application.secrets.decidim[:track_newsletter_links] == "auto"
