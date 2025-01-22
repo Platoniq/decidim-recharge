@@ -9,6 +9,15 @@ GIT
       redcarpet (~> 3.4)
 
 GIT
+  remote: https://github.com/Platoniq/decidim-verifications-direct_verifications
+  revision: f55f45c58a34b468f5eb753cc988233ec11d561c
+  specs:
+    decidim-direct_verifications (1.4.0)
+      decidim-admin (>= 0.28.0, < 0.29)
+      decidim-core (>= 0.28.0, < 0.29)
+      deface (~> 1.5)
+
+GIT
   remote: https://github.com/PopulateTools/decidim-module-extra_user_fields
   revision: 5ba1c2f00e5cea981a9d6e3e41f4d07898e82cc7
   branch: main
@@ -971,6 +980,7 @@ DEPENDENCIES
   decidim-conferences (= 0.28.2)
   decidim-decidim_awesome!
   decidim-dev (= 0.28.2)
+  decidim-direct_verifications!
   decidim-extra_user_fields!
   decidim-term_customizer!
   faker
