@@ -51,13 +51,14 @@ Rails.application.configure do
 
   # Use the lowest log level to ensure availability of diagnostic information
   # when problems arise.
-  config.log_level = %w(debug info warn error fatal).include?(ENV.fetch("RAILS_LOG_LEVEL", nil)) ? ENV["RAILS_LOG_LEVEL"] : :info
+  config.log_level = %w(debug info warn error fatal).include?(ENV.fetch("RAILS_LOG_LEVEL", nil)) ? ENV.fetch("RAILS_LOG_LEVEL", nil) : :info
 
   # Prepend all log lines with the following tags.
   config.log_tags = [:request_id]
 
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
+  config.cache_store = :redis_cache_store, { url: ENV.fetch("REDIS_URL", "redis://localhost:6379") }
 
   # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter     = :resque
@@ -83,7 +84,7 @@ Rails.application.configure do
   config.active_support.disallowed_deprecation_warnings = []
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
-  config.log_formatter = ::Logger::Formatter.new
+  config.log_formatter = Logger::Formatter.new
   config.action_mailer.smtp_settings = {
     address: Rails.application.secrets.smtp_address,
     port: Rails.application.secrets.smtp_port,
@@ -91,8 +92,10 @@ Rails.application.configure do
     user_name: Rails.application.secrets.smtp_username,
     password: Rails.application.secrets.smtp_password,
     domain: Rails.application.secrets.smtp_domain,
+    enable_starttls: Rails.application.secrets.smtp_starttls,
     enable_starttls_auto: Rails.application.secrets.smtp_starttls_auto,
-    openssl_verify_mode: "none"
+    openssl_verify_mode: "none",
+    tls: Rails.application.secrets.smtp_tls
   }
 
   # Use a different logger for distributed setups.

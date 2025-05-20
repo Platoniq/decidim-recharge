@@ -1,5 +1,4 @@
 @import "./variables";
-
 body, .off-canvas-wrapper, .home-section:nth-of-type(2n + 1) {
   background-color: $body-background;
 }
@@ -17,4 +16,61 @@ h5,
 h6,
 .h6  {
   font-family: "NeuePlakTextRegular", "Helvetica", "Roboto", "Arial", sans-serif;
+}
+
+.h1 {
+  font-size: 4em;
+}
+
+.decorator, .social-heading, .section-heading {
+  font-weight: bold;
+}
+
+.section-heading::before, .home__section-title::before, .h2::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 1.35em;
+  background-color: $color-pink;
+  margin-right: 0.5rem;
+  margin-bottom: -0.5rem;
+  vertical-align: top;
+}
+
+.layout-2col__main.content_block > .decorator::after {
+  display: none;
+}
+
+.home__section-title::after {
+  display: none;
+}
+
+.decorator::after, .title-decorator::after {
+  display: none !important;
+}
+
+.social-heading, .section-heading {
+  text-transform: uppercase;
+}
+
+.stack {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.stack-vertical .stack {
+  gap: 1em;
+}
+
+.card__calendar-list__reset > time > span.card__calendar-month {
+  color: $black;
+}
+
+div.stack-body {
+  text-align: center;
+}
+
+.stack-item {
+  border: none !important;
 }

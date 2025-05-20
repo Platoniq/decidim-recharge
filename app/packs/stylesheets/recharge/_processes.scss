@@ -1,0 +1,22 @@
+header .menu-bar__breadcrumb-desktop__dropdown-wrapper {
+  color: $white;
+}
+
+.menu-bar__breadcrumb-desktop > span {
+  color: $white;
+}
+
+.layout-2col__aside >.title-decorator::after, .layout-main__heading > .decorator::after {
+  background: $color-pink !important;
+}
+
+#menu-bar {
+  background: #2C2930,
+}
+
+#content > main > div > div.text-center > h1::after,
+#content > main > section.content-block.participatory-space-group__content-block > h2::after,
+#content > main > section:nth-child(2) > div.content-block__title > h2::after,
+#footer_sub_hero > div > h2:after {
+  display: none;
+}

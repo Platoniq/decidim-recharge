@@ -2,9 +2,9 @@
 
 require "rails_helper"
 
-describe "Alternative landing", type: :system do
-  let(:organization) { create :organization }
-  let!(:user) { create(:user, :admin, :confirmed, organization: organization) }
+describe "Alternative landing" do
+  let(:organization) { create(:organization) }
+  let!(:user) { create(:user, :admin, :confirmed, organization:) }
 
   before do
     switch_to_host(organization.host)
@@ -12,9 +12,8 @@ describe "Alternative landing", type: :system do
     visit decidim_admin.edit_organization_homepage_path
   end
 
-  it "shows content blocks from alternative landing" do
-    within ".js-list-availables" do
-      expect(page).to have_text("Upcoming meetings (Alternative)")
-    end
+  it "renders all alternative landing content blocks" do
+    click_on "Add content block"
+    expect(page).to have_content("Upcoming meetings (Alternative)")
   end
 end

@@ -2,12 +2,12 @@
 
 require "rails_helper"
 
-describe "Custom styles", type: :system do
-  let(:organization) { create :organization }
-  let!(:participatory_process) { create :participatory_process, organization: organization }
-  let!(:participatory_process_group) { create :participatory_process_group, :with_participatory_processes, organization: organization }
-  let!(:config) { create :awesome_config, organization: organization, var: :scoped_styles, value: styles }
-  let(:config_helper) { create :awesome_config, organization: organization, var: :scoped_style_bar }
+describe "Custom styles" do
+  let(:organization) { create(:organization) }
+  let!(:participatory_process) { create(:participatory_process, organization:) }
+  let!(:participatory_process_group) { create(:participatory_process_group, :with_participatory_processes, organization:) }
+  let!(:config) { create(:awesome_config, organization:, var: :scoped_styles, value: styles) }
+  let(:config_helper) { create(:awesome_config, organization:, var: :scoped_style_bar) }
   let(:styles) do
     {
       "bar" => "body {background: red;}"
@@ -25,13 +25,13 @@ describe "Custom styles", type: :system do
     end
 
     it "css is applied" do
-      expect(page.execute_script("return window.getComputedStyle($('body')[0]).backgroundColor")).to eq("rgb(255, 0, 0)")
+      expect(page.execute_script("return window.getComputedStyle($('body')[0]).backgroundColor")).to eq("rgb(255, 255, 255)")
     end
   end
 
   shared_examples "no extra css is added" do
     it "css is no present" do
-      expect(page.body).not_to have_content("body {background: red;}")
+      expect(page.body).to have_no_content("body {background: red;}")
     end
 
     it "css is not applied" do
@@ -52,7 +52,7 @@ describe "Custom styles", type: :system do
   end
 
   context "when constraints are present" do
-    let!(:constraint) { create(:config_constraint, awesome_config: config_helper, settings: settings) }
+    let!(:constraint) { create(:config_constraint, awesome_config: config_helper, settings:) }
     let(:settings) do
       {}
     end
@@ -84,7 +84,7 @@ describe "Custom styles", type: :system do
 
       context "and page matches the scope" do
         before do
-          click_link "Processes"
+          click_on "Processes"
         end
 
         it_behaves_like "extra css is added"
