@@ -11,7 +11,7 @@ checksums = [
     files: {
       # layouts
       "/app/views/layouts/decidim/_head_extra.html.erb" => "1b8237357754cf519f4e418135f78440",
-      "/app/views/layouts/decidim/_logo.html.erb" => "ab01dd1df9ce62cbd62f640a3b5018b2",
+      "/app/views/layouts/decidim/_logo.html.erb" => "9714a2447e07f302c499ff588253a2f2",
       "/app/views/layouts/decidim/footer/_main_social_media_links.html.erb" => "55465bee8d94bfef06d1e57202dae6b6",
       "/app/views/layouts/decidim/footer/_mini.html.erb" => "ccead2f5f20557ea4db1501de943f82b",
       "/app/cells/decidim/content_blocks/footer_sub_hero/show.erb" => "7cc7e6378786032a70e700a3273d1198",
@@ -23,7 +23,7 @@ checksums = [
     package: "decidim-admin",
     files: {
       "/app/commands/decidim/admin/update_organization.rb" => "6f02b3ece9f7039d5179360d42704469", # add linkedin to social handlers
-      "/app/forms/decidim/admin/organization_form.rb" => "23d64335c187cbd8cd4db6524d48bfdc" # add linkedin to social handlers
+      "/app/forms/decidim/admin/organization_form.rb" => "c6e3ae788446753454c45d8e1950517c" # add linkedin to social handlers
     }
   }
 ]
