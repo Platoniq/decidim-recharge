@@ -27,16 +27,6 @@ GIT
       deface (~> 1.5)
 
 GIT
-  remote: https://github.com/PopulateTools/decidim-module-extra_user_fields
-  revision: 196d782a92224c124c2b20eaec06c5d75dfa162d
-  branch: main
-  specs:
-    decidim-extra_user_fields (0.28.0)
-      country_select (~> 4.0)
-      decidim-core (>= 0.28)
-      deface (~> 1.5)
-
-GIT
   remote: https://github.com/decidim-ice/decidim-module-decidim_awesome
   revision: 39b61b15e68e86fee193fa597c76a1392a8c5f8a
   branch: main
@@ -47,6 +37,16 @@ GIT
       decidim-core (>= 0.29.1, < 0.30)
       deface (>= 1.5)
       sassc (~> 2.3)
+
+GIT
+  remote: https://github.com/openpoke/decidim-module-extra_user_fields
+  revision: c031904b921085775287f8c13a26a0a19e5e2e65
+  branch: main
+  specs:
+    decidim-extra_user_fields (0.29.0)
+      country_select (~> 4.0)
+      decidim-core (>= 0.29)
+      deface (~> 1.5)
 
 GEM
   remote: https://rubygems.org/
