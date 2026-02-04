@@ -18,6 +18,8 @@ gem "decidim-direct_verifications", git: "https://github.com/Platoniq/decidim-ve
 gem "decidim-extra_user_fields", git: "https://github.com/PopulateTools/decidim-module-extra_user_fields", branch: "main"
 gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer", branch: "main"
 
+gem "appsignal"
+
 gem "bootsnap", "~> 1.3"
 
 gem "puma", ">= 5.0.0"
