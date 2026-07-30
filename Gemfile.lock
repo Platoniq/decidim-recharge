@@ -982,6 +982,7 @@ DEPENDENCIES
   mdl
   mini_portile2 (~> 2.8, >= 2.8.5)
   puma (>= 5.0.0)
+  rack-attack (~> 6.7)
   rubocop-faker
   sidekiq (~> 6.0)
   sidekiq-cron
